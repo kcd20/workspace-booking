@@ -1,0 +1,92 @@
+.main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8fafc;
+  font-family: var(--font-geist-sans), Arial, sans-serif;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 48px 40px;
+  max-width: 440px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+}
+
+.heading {
+  font-size: 22px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 8px;
+}
+
+.body {
+  font-size: 15px;
+  color: #64748b;
+  margin: 0 0 24px;
+  line-height: 1.6;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 24px;
+  font-size: 14px;
+}
+
+.table td {
+  padding: 8px 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.table td:first-child {
+  color: #94a3b8;
+  width: 40%;
+}
+
+.table td:last-child {
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.error {
+  font-size: 13px;
+  color: #ef4444;
+  margin: 0 0 16px;
+}
+
+.cancelBtn {
+  width: 100%;
+  padding: 11px 0;
+  background: #ef4444;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+
+.cancelBtn:hover {
+  background: #dc2626;
+}
+
+.link {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  color: #64748b;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #0f172a;
+}

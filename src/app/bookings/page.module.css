@@ -1,0 +1,193 @@
+.main {
+  min-height: 100vh;
+  background: #f8fafc;
+  font-family: var(--font-geist-sans), Arial, sans-serif;
+  padding: 40px 16px;
+}
+
+.container {
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-bottom: 28px;
+}
+
+.back {
+  font-size: 13px;
+  color: #64748b;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.back:hover {
+  color: #0f172a;
+}
+
+.heading {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+}
+
+.lookupForm {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+.emailInput {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #0f172a;
+  background: #fff;
+  font-family: inherit;
+}
+
+.emailInput:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.12);
+}
+
+.lookupBtn {
+  padding: 10px 20px;
+  background: #0f172a;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: inherit;
+  white-space: nowrap;
+}
+
+.lookupBtn:hover {
+  background: #1e293b;
+}
+
+.intro {
+  font-size: 15px;
+  color: #64748b;
+  margin: 0 0 20px;
+}
+
+.emailNote {
+  font-size: 14px;
+  color: #64748b;
+  margin: 0 0 24px;
+}
+
+.sentBox {
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.sentTitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: #15803d;
+  margin: 0 0 6px;
+}
+
+.sentBody {
+  font-size: 14px;
+  color: #166534;
+  margin: 0;
+}
+
+.errorMsg {
+  font-size: 15px;
+  color: #ef4444;
+  margin: 0 0 16px;
+}
+
+.empty {
+  font-size: 15px;
+  color: #64748b;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 16px 20px;
+}
+
+.cardTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.spaceLabel {
+  font-size: 15px;
+  font-weight: 600;
+  color: #0f172a;
+  margin: 0 0 4px;
+}
+
+.slot {
+  font-size: 13px;
+  color: #64748b;
+  margin: 0;
+}
+
+.badge {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 99px;
+  text-transform: capitalize;
+  flex-shrink: 0;
+}
+
+.confirmed {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.cancelled {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.cardBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 12px;
+  border-top: 1px solid #f1f5f9;
+}
+
+.price {
+  font-size: 15px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.cancelLink {
+  font-size: 13px;
+  color: #ef4444;
+  text-decoration: none;
+}
+
+.cancelLink:hover {
+  text-decoration: underline;
+}

@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "FlowSpace — Coworking Space Booking",
-  description: "Book desks, private offices, and meeting rooms at FlowSpace.",
+  title: "WorkSpace — Coworking Space Booking",
+  description: "Book desks, private offices, and meeting rooms at WorkSpace.",
 };
 
 export default function RootLayout({

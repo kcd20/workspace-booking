@@ -37,7 +37,7 @@ export default async function CancelPage({ searchParams }: Props) {
         <div className={styles.card}>
           <h1 className={styles.heading}>Already Cancelled</h1>
           <p className={styles.body}>This booking has already been cancelled.</p>
-          <Link href="/" className={styles.link}>Back to Floor Plan</Link>
+          <Link href="/book" className={styles.link}>Back to Floor Plan</Link>
         </div>
       </main>
     );
@@ -70,7 +70,7 @@ export default async function CancelPage({ searchParams }: Props) {
         <form action={cancelBooking.bind(null, token)}>
           <button type="submit" className={styles.cancelBtn}>Cancel & Refund</button>
         </form>
-        <Link href="/" className={styles.link}>Keep My Booking</Link>
+        <Link href="/book" className={styles.link}>Keep My Booking</Link>
       </div>
     </main>
   );
@@ -82,7 +82,7 @@ function InvalidLink() {
       <div className={styles.card}>
         <h1 className={styles.heading}>Invalid Link</h1>
         <p className={styles.body}>This cancellation link is invalid or has expired.</p>
-        <Link href="/" className={styles.link}>Back to Floor Plan</Link>
+        <Link href="/book" className={styles.link}>Back to Floor Plan</Link>
       </div>
     </main>
   );

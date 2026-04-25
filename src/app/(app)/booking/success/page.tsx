@@ -10,7 +10,7 @@ export default function BookingSuccessPage() {
         <p className={styles.body}>
           Your payment was successful. A confirmation will be sent to your email shortly.
         </p>
-        <Link href="/" className={styles.link}>Back to Floor Plan</Link>
+        <Link href="/book" className={styles.link}>Back to Floor Plan</Link>
       </div>
     </main>
   );

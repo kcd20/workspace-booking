@@ -180,7 +180,7 @@ export default function FloorPlan() {
 
       {/* SVG floor plan */}
       <div className={styles.svgWrapper} style={{ opacity: loading ? 0.55 : 1, transition: 'opacity 0.2s' }}>
-        <svg viewBox="0 0 980 680" xmlns="http://www.w3.org/2000/svg" aria-label="FlowSpace floor plan" className={styles.svg}>
+        <svg viewBox="0 0 980 680" xmlns="http://www.w3.org/2000/svg" aria-label="WorkSpace floor plan" className={styles.svg}>
 
           {ZONES.map(zone => (
             <g key={zone.id}>

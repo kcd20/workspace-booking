@@ -1,0 +1,224 @@
+/* ── Scroll container ── */
+.page {
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  font-family: var(--font-geist-sans), Arial, sans-serif;
+}
+
+/* ── Shared section ── */
+.section {
+  height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ── Hero ── */
+.hero {
+  background:
+    radial-gradient(ellipse 55% 65% at 80% 60%, rgba(59, 130, 246, 0.13) 0%, transparent 65%),
+    radial-gradient(ellipse 40% 50% at 10% 20%, rgba(99, 102, 241, 0.08) 0%, transparent 60%),
+    radial-gradient(circle, rgba(255,255,255,0.025) 1px, transparent 1px),
+    #050505;
+  background-size: auto, auto, 40px 40px, auto;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.heroContent {
+  padding: 0 10vw;
+  max-width: 900px;
+}
+
+.heroEyebrow {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.4);
+  margin: 0 0 24px;
+}
+
+.heroTitle {
+  font-size: clamp(72px, 12vw, 160px);
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: -0.03em;
+  line-height: 0.9;
+  margin: 0 0 32px;
+}
+
+.heroTitleLight {
+  color: rgba(255, 255, 255, 0.25);
+}
+
+.heroTagline {
+  font-size: clamp(16px, 2vw, 22px);
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0 0 48px;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+}
+
+.heroCta {
+  display: inline-block;
+  padding: 16px 36px;
+  background: #fff;
+  color: #050505;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: background 0.2s;
+}
+
+.heroCta:hover {
+  background: #e2e8f0;
+}
+
+.scrollHint {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.25);
+}
+
+/* ── Zone sections ── */
+.zoneContent {
+  padding: 0 10vw;
+  max-width: 680px;
+  z-index: 1;
+}
+
+.zoneEyebrow {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin: 0 0 16px;
+}
+
+.zoneName {
+  font-size: clamp(52px, 8vw, 108px);
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  margin: 0 0 28px;
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.4);
+}
+
+.zoneDesc {
+  font-size: clamp(14px, 1.4vw, 18px);
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.7;
+  margin: 0 0 12px;
+  max-width: 480px;
+  font-weight: 400;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.zoneCapacity {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.35);
+  margin: 0 0 36px;
+}
+
+.zoneLink {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.zoneLink:hover {
+  opacity: 0.7;
+}
+
+
+/* ── Final CTA ── */
+.ctaSection {
+  background:
+    radial-gradient(ellipse 60% 70% at 20% 55%, rgba(99, 102, 241, 0.18) 0%, transparent 60%),
+    radial-gradient(ellipse 45% 50% at 85% 20%, rgba(59, 130, 246, 0.08) 0%, transparent 60%),
+    radial-gradient(circle, rgba(255,255,255,0.025) 1px, transparent 1px),
+    #0f172a;
+  background-size: auto, auto, 40px 40px, auto;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.ctaContent {
+  padding: 0 10vw;
+}
+
+.ctaEyebrow {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.3);
+  margin: 0 0 20px;
+}
+
+.ctaTitle {
+  font-size: clamp(48px, 8vw, 100px);
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  margin: 0 0 48px;
+}
+
+.ctaBtn {
+  display: inline-block;
+  padding: 16px 36px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.ctaBtn:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 640px) {
+  .heroContent,
+  .zoneContent,
+  .ctaContent {
+    padding: 0 24px;
+  }
+
+  .zoneNumber {
+    display: none;
+  }
+
+  .scrollHint {
+    bottom: 24px;
+  }
+}

@@ -10,7 +10,7 @@ export async function sendBookingsLink(formData: FormData): Promise<void> {
   const link = `${appUrl}/bookings?token=${createToken(email)}`;
 
   await resend.emails.send({
-    from: 'FlowSpace <onboarding@resend.dev>',
+    from: 'WorkSpace <onboarding@resend.dev>',
     to: email,
     subject: 'Your bookings link',
     html: `

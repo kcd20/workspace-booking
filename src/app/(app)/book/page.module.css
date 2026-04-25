@@ -1,45 +1,9 @@
 .page {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: calc(100vh - 57px);
   background: #f8fafc;
   font-family: var(--font-geist-sans), Arial, sans-serif;
-}
-
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 14px 32px;
-  background: #fff;
-  border-bottom: 1px solid #e2e8f0;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-}
-
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.brandName {
-  font-size: 20px;
-  font-weight: 700;
-  color: #0f172a;
-  letter-spacing: -0.4px;
-}
-
-.myBookings {
-  font-size: 13px;
-  color: #64748b;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.myBookings:hover {
-  color: #0f172a;
 }
 
 .main {

@@ -1,4 +1,4 @@
-# FlowSpace
+# WorkSpace
 
 A coworking space booking app with real-time seat availability, Stripe payments, and email confirmations.
 

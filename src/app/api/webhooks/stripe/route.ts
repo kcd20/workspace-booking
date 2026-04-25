@@ -53,7 +53,7 @@ export async function POST(request: Request) {
       });
 
       const { data: emailData, error: emailError } = await resend.emails.send({
-        from: 'FlowSpace <onboarding@resend.dev>',
+        from: 'WorkSpace <onboarding@resend.dev>',
         to: booking.customer_email,
         subject: 'Your booking is confirmed',
         html: `

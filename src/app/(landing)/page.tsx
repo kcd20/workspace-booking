@@ -61,10 +61,35 @@ export default function LandingPage() {
       {/* Hero */}
       <section className={`${styles.section} ${styles.hero}`}>
         <div className={styles.heroContent}>
-          <p className={styles.heroEyebrow}>Premium Coworking</p>
-          <h1 className={styles.heroTitle}>Work<span className={styles.heroTitleLight}>Space</span></h1>
-          <p className={styles.heroTagline}>Your workspace, on demand.</p>
-          <Link href="/book" className={styles.heroCta}>Book a Space →</Link>
+          <div className={styles.heroCopy}>
+            <p className={styles.heroEyebrow}>Premium Coworking</p>
+            <h1 className={styles.heroTitle}>Work<span className={styles.heroTitleLight}>Space</span></h1>
+            <p className={styles.heroTagline}>
+              Move from drop-in focus sessions to client-ready meeting rooms without changing your rhythm.
+            </p>
+            <div className={styles.heroActions}>
+              <Link href="/book" className={styles.heroCta}>Book a Space</Link>
+              <p className={styles.heroMeta}>Open daily · Instant confirmation · From $15/hr</p>
+            </div>
+            <div className={styles.heroStats}>
+              <div className={styles.heroStat}>
+                <strong>29</strong>
+                <span>desks and rooms ready now</span>
+              </div>
+              <div className={styles.heroStat}>
+                <strong>4.9/5</strong>
+                <span>rated for comfort and focus</span>
+              </div>
+              <div className={styles.heroStat}>
+                <strong>5 min</strong>
+                <span>from booking to check-in</span>
+              </div>
+            </div>
+          </div>
+
+          <div className={styles.heroShowcase} aria-hidden="true">
+            <div className={styles.heroOrb} />
+          </div>
         </div>
         <p className={styles.scrollHint}>Scroll to explore</p>
       </section>

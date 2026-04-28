@@ -31,6 +31,7 @@ export default async function AppHeader() {
         ) : (
           <Link href="/auth" className={styles.navLink}>Sign In</Link>
         )}
+        <Link href="/book" className={styles.cta}>Book a Space</Link>
       </nav>
     </header>
   );

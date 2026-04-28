@@ -1,4 +1,4 @@
-import LandingNav from '@/components/LandingNav';
+import AppHeader from '@/components/AppHeader';
 import Link from 'next/link';
 import styles from './page.module.css';
 
@@ -55,8 +55,9 @@ const ZONES = [
 
 export default function LandingPage() {
   return (
-    <div className={styles.page}>
-      <LandingNav />
+    <div className={styles.root}>
+      <AppHeader />
+      <div className={styles.page}>
 
       {/* Hero */}
       <section className={`${styles.section} ${styles.hero}`}>
@@ -119,6 +120,7 @@ export default function LandingPage() {
         </section>
       ))}
 
+      </div>
     </div>
   );
 }
